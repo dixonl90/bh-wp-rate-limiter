@@ -1,0 +1,74 @@
+{
+  "name": "brianhenryie/bh-wp-rate-limiter",
+  "description": "Rate limiter using WordPress cache for storage.",
+  "type": "wordpress-library",
+  "license": "GPL-2.0+-or-later",
+  "authors": [
+    {
+      "name": "BrianHenryIE",
+      "email": "BrianHenryIE@gmail.com"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "process-timeout": 0,
+    "sort-packages": true,
+    "allow-plugins": {
+      "cweagans/composer-patches": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "phpstan/extension-installer": true
+    }
+  },
+  "repositories": {
+    "wp-oop/transient-cache": {
+      "url": "https://github.com/BrianHenryIE/transient-cache",
+      "type": "git"
+    },
+    "nikolaposa/rate-limit": {
+      "url": "https://github.com/BrianHenryIE/rate-limit",
+      "type": "git"
+    },
+    "wordpress/wordpress": {
+      "url": "https://github.com/WordPress/wordpress-develop",
+      "type": "git"
+    }
+  },
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "nikolaposa/rate-limit": "dev-psr-16",
+    "wp-oop/transient-cache": "dev-php-version-requirement"
+  },
+  "require-dev": {
+    "10up/wp_mock": "0.4.2",
+    "antecedent/patchwork": "^2.1",
+    "brianhenryie/color-logger": "^1.0",
+    "brianhenryie/strauss": "*",
+    "codeception/module-asserts": "^1.0",
+    "codeception/module-cli": "^1.0",
+    "codeception/module-db": "^1.0.0",
+    "codeception/module-filesystem": "^1.0",
+    "codeception/module-phpbrowser": "^1.0.0",
+    "codeception/module-webdriver": "^1.0",
+    "codeception/util-universalframework": "^1.0",
+    "cweagans/composer-patches": "*",
+    "dealerdirect/phpcodesniffer-composer-installer": "*",
+    "jaschilz/php-coverage-badger": "^2.0",
+    "lucatume/wp-browser": "*",
+    "php-stubs/woocommerce-stubs": "^6.4",
+    "phpcompatibility/phpcompatibility-wp": "*",
+    "phpstan/extension-installer": "^1.1",
+    "phpunit/phpcov": "*",
+    "squizlabs/php_codesniffer": "*",
+    "szepeviktor/phpstan-wordpress": "^0.7.2",
+    "voku/portable-ascii": "dev-master",
+    "wordpress/wordpress": "*",
+    "wp-cli/wp-cli-bundle": "*",
+    "wp-coding-standards/wpcs": "*"
+  }
+}
