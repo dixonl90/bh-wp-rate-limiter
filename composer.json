@@ -27,7 +27,7 @@
   },
   "repositories": {
     "wp-oop/transient-cache": {
-      "url": "https://github.com/BrianHenryIE/transient-cache",
+      "url": "https://github.com/dixonl90/transient-cache",
       "type": "git"
     },
     "nikolaposa/rate-limit": {
