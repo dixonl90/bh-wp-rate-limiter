@@ -42,7 +42,7 @@
   "require": {
     "php": "^7.4 || ^8.0",
     "nikolaposa/rate-limit": "dev-psr-16",
-    "wp-oop/transient-cache": "dev-php-version-requirement"
+    "wp-oop/transient-cache": "dev-develop"
   },
   "require-dev": {
     "10up/wp_mock": "0.4.2",
